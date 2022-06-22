@@ -1,0 +1,207 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.icon-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #1144d1;
+  height: 30px;
+}
+
+.icon-block .header-icona {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.icon-block .header-icona:hover {
+  text-decoration: underline;
+}
+
+.icon-block i {
+  margin: 10px;
+  color: white;
+}
+
+.icon-block p {
+  display: inline-block;
+  color: white;
+}
+
+header {
+  height: 110px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+nav .navbar-title {
+  text-align: center;
+  position: absolute;
+  left: 220px;
+}
+
+nav h1 {
+  margin-top: 30px;
+  font-size: 500;
+  font-size: 32px;
+}
+
+nav .navbar-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 180px;
+  text-align: center;
+}
+
+nav .navbar-about > ul > li > ul > li {
+  margin-top: 13px;
+}
+
+nav .navbar-about > ul > li > ul > li:hover {
+  color: white;
+}
+
+nav .navbar-about > ul {
+  margin-top: 30px;
+  position: relative;
+  list-style-type: none;
+}
+
+nav .navbar-about li {
+  color: #636465;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav .navbar-about li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+nav .navbar-about li > ul {
+  text-align: left;
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  -webkit-transition: height 4s;
+  transition: height 4s;
+  background-color: #eeeded;
+  padding: 0;
+  border-radius: 5px;
+  height: 200px;
+  width: 150px;
+  z-index: 5;
+}
+
+nav .navbar-about li:hover ul {
+  display: block;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: drop 1s forwards;
+          animation: drop 1s forwards;
+}
+
+@-webkit-keyframes drop {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+  }
+}
+
+@keyframes drop {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+  }
+}
+
+#welcome {
+  background-image: url("https://bootstrapmade.com/demo/templates/BizLand/assets/img/hero-bg.jpg");
+  width: 100;
+  height: 70vh;
+  font-size: 900;
+}
+
+#welcome .well-title {
+  position: absolute;
+  top: 50%;
+}
+
+#welcome .well-title h1 > p {
+  color: #1144d1;
+  display: inline-block;
+}
+
+#welcome .well-title button {
+  background-color: #1144d1;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-color: #1144d1;
+  margin: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#welcome .well-title button:hover {
+  opacity: 0.9;
+}
+
+#welcome .well-title .well-icon {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 900;
+}
+
+#welcome .well-title .well-icon:hover {
+  color: #1144d1;
+}
+
+#welcome .well-title .well-icon i {
+  color: #1144d1;
+  margin: 10px;
+  font-size: 25px;
+}
+
+#find {
+  background-color: aqua;
+}
+
+#find .find-title {
+  margin: 0 auto;
+  text-align: center;
+  width: 700px;
+}
+
+#find .img img {
+  width: 630px;
+  height: 610px;
+}
+
+#find .img-icon-item > div {
+  display: inline-block;
+  margin-left: 20px;
+}
